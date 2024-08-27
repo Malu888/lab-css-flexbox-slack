@@ -8,3 +8,45 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #540B51;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.icons {
+    display: flex;
+   justify-content: flex-end;
+   
+}
+
+.title {
+    text-align: center;
+    color: #FFF;
+    padding-bottom: 20px;
+    margin: 30px 20px;
+}
+
+.text1 span{
+    color: #ECB12F;
+    margin-left: 25%;
+}
+
+.text1 {
+    color: #FFF;
+    padding-bottom: 20px;
+}
+
+header div button {
+    background-color: #FFF;
+    color:#540B51;
+    padding: 20px;
+    width: 500px;
+}
