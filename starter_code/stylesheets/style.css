@@ -9,26 +9,75 @@ links blue: #2E71A6
 footer links grey: #454245
 */
 
-*{
+head .slack{
+    display: flex;
+    align-content: flex-start;
+}
+
+body{
+
     margin: 0;
     padding: 0;
     background-color: #540B51;
 }
 
-body nav{
+
+
+.nav-bar {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
+    background-color: #540B51;
 }
 
 .nav-bar ul{
+    background-color: #540B51;
+    list-style-type: none;
     display: flex;
-    flex-direction: row;
-   
+    gap : 20px;
 }
 
-#icons{
-    display: flex;
-    align-content: flex-end;
-    justify-content: flex-end;
+.nav-bar ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    background-color: #540B51;
+}
+
+#icons img {
+    width: 24px;
+    height: 24px;
+    background-color: #540B51;
+}
+
+.nav-icons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    background-color: #540B51;
+    position: absolute;
+    right: 10%;
+    top: 60px;
+    display: none;
+}
+
+.nav-icons ul li a {
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    background-color: #540B51;
+}
+
+.nav-icons ul li a:hover {
+    background-color: #540B51;
+    border-radius: 4px;
+}
+
+
+#icons:focus + ul {
+    display: block; 
 }
 
 
@@ -52,14 +101,19 @@ body nav{
     font-size: 1.5rem;
 }
 
-header div button {
+#first-button {
     background-color: #FFF;
     color:#540B51;
-    padding: 10px 30px;
-    margin: 10px 30px;
     border-radius: 10px;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    padding: 10px;
+    max-width: 100%;
+    margin: 10px;
 }
 
 #button img{
@@ -76,17 +130,34 @@ header div img{
 
 #button{
     background-color: #4285F4;
-    padding: 10px 30px;
-    height: 70px;
     border-radius: 10px;
     color:white;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     text-align: center;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    padding: 10px;
+    max-width: 100%;
+    margin: 10px 20px;
 }
+
+#first-button #button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 #button span{
     background-color: #4285F4;
+}
+
+
+#button img {
+    width: 23px;
 }
 
 header div{
@@ -96,6 +167,74 @@ header div{
 
 }
 
-.companies {
-    background-color: #F3EAE2;
+.image-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section p {
+    margin-bottom: 30px;
+}
+
+.main {
+    background-color: ivory;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 5px;
+}
+
+.main img{
+    width: 100px;
+    padding: 20px;
+}
+
+.white-section{
+    background-color: #FFF;
+    padding: 50px 5px;
+}
+
+.white-section h3 {
+    color: #540B51;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.white-section p {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.white-section ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-section span {
+    color: #540B51;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.white-section ul li p {
+    font-weight: bold;
+}
+
+section h3 {
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+main section button{
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 10px;
+padding: 20px;
 }
